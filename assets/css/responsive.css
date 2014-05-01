@@ -113,7 +113,7 @@ and (min-width : 1824px) {
 
   	/*** Page content ***/
   	.page-content { 
-  		margin-left: 250px; 
+  		margin-left: 500px; 
 		min-height: 1006px;
 	}
 
@@ -324,7 +324,7 @@ and (min-width : 1824px) {
     
   	/*** Page content ***/
   	.page-content { 
-  		margin-left: 50px; 
+  		margin-left: 250px; 
 		margin-top: 0px;
 		min-height: 911px; 
 	}
@@ -333,7 +333,7 @@ and (min-width : 1824px) {
 	}
 	
 	.inner-menu-layout .page-content{
-		margin-left:250px;
+		margin-left:500px;
 	}
 	.inner-menu{
 		margin-left:50px;	
