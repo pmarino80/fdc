@@ -62,7 +62,7 @@
 			<!-- END MOBILE HEADER -->
 			<!-- BEGIN LOGO -->	
 			<a href="#">
-				<h1 style="font-size:24px;color: white;margin-left: 60px;">well<span class="semi-bold">spring</span></h2>
+				<h1 style="font-size:28px;color: white;margin-left: 20px;"><span class="semi-bold">Scout</span></h2>
 			</a>
 			<!-- END LOGO --> 
 		</div>
@@ -143,46 +143,54 @@
 	<div class="page-sidebar" id="main-menu"> 
 		  <div class="page-sidebar-wrapper" id="main-menu-wrapper">
 		<!-- BEGIN SIDEBAR MENU -->	
-		<p class="menu-title">ROUTES<span class="pull-right"><a href="javascript:;"><i class="fa fa-refresh"></i></a></span></p>
-		<ul>	
-			<!-- BEGIN SELECTED LINK -->
-			<li class="start active">
-				<a href="#">
-					<span class="title">Route 1</span>
-					<span class="selected"></span>
-					<span class="badge badge-disable pull-right">52</span>
-				</a>
-			</li>
-			<!-- END SELECTED LINK -->
-			<!-- BEGIN BADGE LINK -->
-			<li class="">
-				<a href="#">
-					<span class="title">Route 2</span>
-					<span class="badge badge-disable pull-right">46</span>
-				</a>
-			</li>
-			<!-- END BADGE LINK -->     
-			<!-- BEGIN SINGLE LINK -->
-			<li class="">
-				<a href="#">
-					<span class="title">Route 3</span>
-					<span class="badge badge-disable pull-right">55</span>
-				</a>
-			</li>
-			<li class="">
-				<a href="#">
-					<span class="title">Route 4</span>
-					<span class="badge badge-disable pull-right">38</span>
-				</a>
-			</li>
-			<li class="">
-				<a href="#">
-					<span class="title">Route 5</span>
-					<span class="badge badge-disable pull-right">15</span>
-				</a>
-			</li>
-			<!-- END SINGLE LINK -->    	
-		</ul>
+		<p class="menu-title">NAVIGATION</p>
+<ul>	
+	<!-- BEGIN SELECTED LINK -->
+	<li>
+		<a href="#">
+			<i class="fa fa-dashboard"></i>
+			<span class="title ">Dashboard</span>
+			<span class="selected"></span>
+		</a>
+	</li>
+	<!-- END SELECTED LINK -->
+	<!-- BEGIN BADGE LINK -->
+	<li> <a href="javascript:;"><i class="fa fa-location-arrow"></i><span class="title">Routes</span> <span class="arrow "></span> </a>
+		<ul class="sub-menu">
+          <li > <a href="javascript:;">Route #1 &nbsp;&nbsp;<span class="badge badge-primary">52</span> <i class="fa fa-angle-right pull-right"></i> </a>
+<!--	          <ul class="sub-menu">
+				<li > <a href="typography.html"><i class="fa fa-map-marker"></i> Locations &nbsp;<span class="badge badge-important">4</span> </a></li>
+				<li > <a href="messages_notifications.html"><i class="fa fa-bar-chart-o"></i> Reporting</a> </li>
+				<li > <a href="icons.html"><i class="fa fa-users"></i> Users</a> </li>
+	          </ul>-->
+          </li>
+  	  	  <li > <a href="javascript:;">Route #2 &nbsp;&nbsp;<span class="badge badge-primary">36</span> <i class="fa fa-angle-right pull-right"></i></a>
+  	  	  <li > <a href="javascript:;">Route #3 &nbsp;&nbsp;<span class="badge badge-primary">42</span> <i class="fa fa-angle-right pull-right"></i></a>
+        </ul>
+	</li>
+	<!-- END BADGE LINK -->     
+	<!-- BEGIN SINGLE LINK -->
+	<li class="">
+		<a href="#">
+			<i class="fa fa-warning"></i>
+			<span class="title">Exceptions</span>
+			<span class="badge badge-important pull-right">12</span>
+		</a>
+	</li>
+	<li class="">
+		<a href="#">
+			<i class="fa fa-bar-chart-o"></i>
+			<span class="title">Reporting</span>
+		</a>
+	</li>
+	<li class="">
+		<a href="#">
+			<i class="fa fa-gears"></i>
+			<span class="title">Admin</span>
+		</a>
+	</li>
+	<!-- END SINGLE LINK -->    	
+</ul>
 		<!-- END SIDEBAR MENU -->
 		<!-- BEGIN SIDEBAR WIDGETS -->
 		<div class="side-bar-widgets">
@@ -226,7 +234,7 @@
 			<div class="details-status">
 				<span data-animation-duration="560" data-value="86" class="animate-number"></span>%
 			</div>	-->
-			<a href="#"><i class="fa fa-plus pull-right"></i></a>
+			<!--<a href="#"><i class="fa fa-plus pull-right"></i></a>-->
 		</div>
 	</div>
 	<!-- END SIDEBAR FOOTER WIDGET -->

@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title Goes Here</title>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+
+	<!-- NEED TO WORK ON -->
+
+	<link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen"/>
+	<link href="assets/plugins/jquery-slider/css/jquery.sidr.light.css" rel="stylesheet" type="text/css" media="screen"/>
+	<link href="assets/plugins/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/plugins/boostrapv3/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/animate.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/responsive.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/custom-icon-set.css" rel="stylesheet" type="text/css"/>
+
+	<!-- BEGIN CORE JS FRAMEWORK--> 
+	<script src="assets/plugins/jquery-1.8.3.min.js" type="text/javascript"></script> 
+	<script src="assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script> 
+	<script src="assets/plugins/boostrapv3/js/bootstrap.min.js" type="text/javascript"></script> 
+	<script src="assets/plugins/breakpoints.js" type="text/javascript"></script> 
+	<script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script> 
+	<script src="assets/plugins/jquery-block-ui/jqueryblockui.js" type="text/javascript"></script> 
+	<!-- END CORE JS FRAMEWORK --> 
+	<!-- BEGIN PAGE LEVEL JS --> 	
+	<script src="assets/plugins/jquery-slider/jquery.sidr.min.js" type="text/javascript"></script> 	
+	<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script> 
+	<script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>  
+	<script src="assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js" type="text/javascript"></script>
+	<!-- END PAGE LEVEL PLUGINS --> 	
+	
+	<!-- BEGIN CORE TEMPLATE JS --> 
+	<script src="assets/js/core.js" type="text/javascript"></script> 
+	<script src="assets/js/chat.js" type="text/javascript"></script> 
+	<script src="assets/js/demo.js" type="text/javascript"></script> 
+	<!-- END CORE TEMPLATE JS --> 
+
+	<!-- END NEED TO WORK ON -->
+	
+	<style>
+	.page-content { 
+		margin-left: 250px !important; 
+		min-height: 1006px;
+	}
+	</style>
+
+</head>
+<body class="">
+<!-- BEGIN HEADER -->
+<div class="header navbar navbar-inverse"> 
+	<!-- BEGIN TOP NAVIGATION BAR -->
+	<div class="navbar-inner">
+		<!-- BEGIN NAVIGATION HEADER -->
+		<div class="header-seperation"> 
+			<!-- BEGIN MOBILE HEADER -->
+			<ul class="nav pull-left notifcation-center" id="main-menu-toggle-wrapper" style="display:none">	
+				<li class="dropdown">
+					<a id="main-menu-toggle" href="#main-menu" class="">
+						<div class="iconset top-menu-toggle-white"></div>
+					</a>
+				</li>		 
+			</ul>
+			<!-- END MOBILE HEADER -->
+			<!-- BEGIN LOGO -->	
+			<a href="#">
+				<h1 style="font-size:28px;color: white;margin-left: 20px;"><span class="semi-bold">Scout</span></h1>
+			</a>
+			<!-- END LOGO --> 
+		</div>
+		<!-- END NAVIGATION HEADER -->
+		<!-- BEGIN CONTENT HEADER -->
+		<div class="header-quick-nav"> 
+			<!-- BEGIN HEADER LEFT SIDE SECTION -->
+			<div class="pull-left"> 			
+				<!-- BEGIN HEADER QUICK LINKS -->
+				<ul class="nav quick-section">
+					<li class="quicklinks"><a href="#" class=""><div class="iconset top-reload"></div></a></li>
+				</ul>
+				<!-- BEGIN HEADER QUICK LINKS -->				
+			</div>
+			<!-- END HEADER LEFT SIDE SECTION -->
+			<!-- BEGIN HEADER RIGHT SIDE SECTION -->
+			<div class="pull-right"> 
+				<div class="chat-toggler">	
+					<!-- BEGIN NOTIFICATION CENTER -->
+					<a href="#" class="dropdown-toggle" id="my-task-list" data-placement="bottom" data-content="" data-toggle="dropdown" data-original-title="Settings">
+						<div class="user-details"> 
+							<div class="username">
+								John<span class="bold">&nbsp;Smith</span>									
+							</div>						
+						</div> 
+						<div class="iconset top-down-arrow"></div>
+					</a>		
+				</div>
+				<!-- BEGIN HEADER NAV BUTTONS -->
+				<ul class="nav quick-section">
+					<!-- BEGIN SETTINGS -->
+					<li class="quicklinks"> 
+						<a data-toggle="dropdown" class="dropdown-toggle pull-right" href="#" id="user-options">						
+							<div class="iconset top-settings-dark"></div> 	
+						</a>
+						<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="user-options">
+							<li><a href="#">Normal Link</a></li>
+							<li><a href="#">Badge Link&nbsp;&nbsp;<span class="badge badge-important animated bounceIn">2</span></a></li>
+							<li class="divider"></li>                
+							<li><a href="#"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Separated Link</a></li>
+						</ul>
+					</li>
+					<!-- END SETTINGS -->
+					<li class="quicklinks"><span class="h-seperate"></span></li> 
+					<!-- BEGIN CHAT SIDEBAR TOGGLE -->
+					<li class="quicklinks"> 	
+						<a id="chat-menu-toggle" href="#sidr" class="chat-menu-toggle">
+							<div class="iconset top-chat-dark"><span class="badge badge-important hide" id="chat-message-count">1</span></div>
+						</a> 
+						<!-- BEGIN OPTIONAL RECENT CHAT POP UP NOTIFICATION -->
+						<div class="simple-chat-popup chat-menu-toggle hide">
+							<div class="simple-chat-popup-arrow"></div>
+							<div class="simple-chat-popup-inner">
+								<div style="width:100px">
+									<div class="semi-bold">Name</div>
+									<div class="message">Message...</div>
+								</div>
+							</div>
+						</div>
+						<!-- END OPTIONAL RECENT CHAT POP UP NOTIFICATION -->
+					</li>
+					<!-- END CHAT SIDEBAR TOGGLE --> 
+				</ul>
+				<!-- END HEADER NAV BUTTONS -->
+			</div>
+			<!-- END HEADER RIGHT SIDE SECTION -->
+		</div> 
+		<!-- END CONTENT HEADER --> 
+	</div>
+	<!-- END TOP NAVIGATION BAR --> 
+</div>
+<!-- END HEADER -->
+	
+<!-- BEGIN CONTENT -->
+<div class="page-container row-fluid">
+	<!-- BEGIN SIDEBAR -->
+	<!-- BEGIN MENU -->
+	<div class="page-sidebar" id="main-menu"> 
+		  <div class="page-sidebar-wrapper" id="main-menu-wrapper">
+		<!-- BEGIN SIDEBAR MENU -->	
+		<p class="menu-title">NAVIGATION</p>
+<ul>	
+	<!-- BEGIN SELECTED LINK -->
+	<li>
+		<a href="#">
+			<i class="fa fa-dashboard"></i>
+			<span class="title ">Dashboard</span>
+			<span class="selected"></span>
+		</a>
+	</li>
+	<!-- END SELECTED LINK -->
+	<!-- BEGIN BADGE LINK -->
+	<li> <a href="javascript:;"><i class="fa fa-location-arrow"></i><span class="title">Routes</span> <span class="arrow "></span> </a>
+		<ul class="sub-menu">
+          <li > <a href="javascript:;">Route #1 &nbsp;&nbsp;<span class="badge badge-primary">52</span> <i class="fa fa-angle-right pull-right"></i> </a>
+<!--	          <ul class="sub-menu">
+				<li > <a href="typography.html"><i class="fa fa-map-marker"></i> Locations &nbsp;<span class="badge badge-important">4</span> </a></li>
+				<li > <a href="messages_notifications.html"><i class="fa fa-bar-chart-o"></i> Reporting</a> </li>
+				<li > <a href="icons.html"><i class="fa fa-users"></i> Users</a> </li>
+	          </ul>-->
+          </li>
+  	  	  <li > <a href="javascript:;">Route #2 &nbsp;&nbsp;<span class="badge badge-primary">36</span> <i class="fa fa-angle-right pull-right"></i></a>
+  	  	  <li > <a href="javascript:;">Route #3 &nbsp;&nbsp;<span class="badge badge-primary">42</span> <i class="fa fa-angle-right pull-right"></i></a>
+        </ul>
+	</li>
+	<!-- END BADGE LINK -->     
+	<!-- BEGIN SINGLE LINK -->
+	<li class="">
+		<a href="#">
+			<i class="fa fa-exchange"></i>
+			<span class="title">Flowback</span>
+		</a>
+	</li>
+	<li class="">
+		<a href="#">
+			<i class="fa fa-warning"></i>
+			<span class="title">Exceptions</span>
+			<span class="badge badge-important pull-right">12</span>
+		</a>
+	</li>
+	<li class="">
+		<a href="#">
+			<i class="fa fa-bar-chart-o"></i>
+			<span class="title">Reporting</span>
+		</a>
+	</li>
+	<li class="">
+		<a href="#">
+			<i class="fa fa-gears"></i>
+			<span class="title">Admin</span>
+		</a>
+	</li>
+	<!-- END SINGLE LINK -->    	
+</ul>
+		<!-- END SIDEBAR MENU -->
+		<!-- BEGIN SIDEBAR WIDGETS -->
+		<div class="side-bar-widgets">
+			<!-- BEGIN FOLDER WIDGET 
+			<p class="menu-title">FOLDER<span class="pull-right"><a href="#" class="create-folder"><i class="icon-plus"></i></a></span></p>
+			<ul class="folders">
+				<li><a href="#"><div class="status-icon green"></div>Task 1</a></li>
+				 BEGIN HIDDEN INPUT BOX (FOR ADD FOLDER LINK) 
+				<li class="folder-input" style="display:none">
+					<input type="text" placeholder="Name of folder" class="no-boarder folder-name" name="" id="folder-name">
+				</li>
+				 END HIDDEN INPUT BOX (FOR ADD FOLDER LINK) 
+			</ul>
+			 END FOLDER WIDGET -->
+			<!-- BEGIN PROJECTS WIDGET 
+			<p class="menu-title">PROJECTS</p>
+			 BEGIN EXAMPLE 1 
+			<div class="status-widget">
+				<div class="status-widget-wrapper">
+					<div class="title">Project Title<a href="#" class="remove-widget"><i class="icon-custom-cross"></i></a></div>
+					<p>Project Description</p>
+				</div>
+			</div>
+			 END EXAMPLE 1 
+			 END PROJECTS WIDGET -->
+		</div>
+		<div class="clearfix"></div>
+		<!-- END SIDEBAR WIDGETS --> 
+	</div>
+	</div>
+	<!-- BEGIN SCROLL UP HOVER -->
+	<a href="#" class="scrollup">Scroll</a>
+	<!-- END SCROLL UP HOVER -->
+	<!-- END MENU -->
+	<!-- BEGIN SIDEBAR FOOTER WIDGET -->
+	<div class="footer-widget">		
+		<!--<div class="progress transparent progress-small no-radius no-margin">
+			<div data-percentage="79%" class="progress-bar progress-bar-success animate-progress-bar"></div>		
+		</div>
+		<div class="pull-right">
+			<div class="details-status">
+				<span data-animation-duration="560" data-value="86" class="animate-number"></span>%
+			</div>	-->
+			<!--<a href="#"><i class="fa fa-plus pull-right"></i></a>-->
+		</div>
+	</div>
+
+<!-- BEGIN PAGE CONTAINER-->
+<div class="page-content"> 
+	<div class="content">  
+		<!-- BEGIN PAGE TITLE -->
+            <div class="page-title">
+                	<h4>Bertha<span class="semi-bold"> 1-23</span></h4>
+            </div>
+            
+            
+            <div class="row">
+                <div class="col-md-3 col-vlg-3 col-sm-12">
+                  <div id="ember5480" class="ember-view tiles added-margin m-b-20 green">
+            <div>
+              <div class="tiles-body" style="padding:12px;">
+                <div class="tiles-title text-white" style="text-transform:uppercase">{{text}}</div>
+                <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                    <div class="widget-stats">
+                      <div class="wrapper transparent" style="border-right: 0">
+                        <span class="item-count animate-number semi-bold" style="display: inline; font-size: 32px">{{data-object.sum}}</span><sub>{{unit}}</sub>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+                 
+                 <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                  {{arrow data-object.diff}}
+                    <div class="wrapper transparent" style="border-right: 0">
+                      <span class="text-white mini-description" style="font-size: 11px;">PREV DAY DIFF</span>
+                      <span class="item-count animate-number semi-bold pull-right" style="font-size: 14px">{{data-object.diff}}</span>
+                    </div>
+                  </div>
+                </div>
+                <br>
+
+                <div class="row">
+                  <div class="description col-sm-4">
+                    <span class="text-white mini-description text-center" style="font-size: 12px">AVG<br><span class="semi-bold">{{data-object.avg}}</span></span>
+                  </div>
+                  <div class="description col-sm-4">
+                    <span class="text-white mini-description text-center" style="font-size: 12px">MAX<br><span class="semi-bold">{{data-object.max}}</span></span>
+                  </div>
+                  <div class="description col-sm-4">
+                    <span class="text-white mini-description text-center" style="font-size: 12px">MIN<br><span class="semi-bold">{{data-object.min}}</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+            </div>
+            </div>
+            
+            
+            
+            
+            <div class="row">
+                <div class="col-md-3 col-vlg-3 col-sm-12">
+                  <div id="ember5480" class="ember-view tiles added-margin m-b-20 green"><div>
+              <div class="tiles-body">
+                <div class="tiles-title text-white"><script id="metamorph-3928-start" type="text/x-placeholder"></script>Oil Production<script id="metamorph-3928-end" type="text/x-placeholder"></script> </div>
+                <div class="row">
+                  <div class="col-md-8 col-sm-12">
+                    <div class="widget-stats">
+                      <div class="wrapper transparent" style="border-right: 0">
+                        <span class="item-count animate-number semi-bold" style="display: inline; font-size: 37px"><script id="metamorph-3929-start" type="text/x-placeholder"></script>1,393.35<script id="metamorph-3929-end" type="text/x-placeholder"></script></span> <script id="metamorph-3930-start" type="text/x-placeholder"></script>BBL<script id="metamorph-3930-end" type="text/x-placeholder"></script>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-4 col-sm-12">
+                    <div class="wrapper transparent" style="border-right: 0">
+                      <script id="metamorph-3931-start" type="text/x-placeholder"></script><script id="metamorph-3931-end" type="text/x-placeholder"></script>
+                      <span class="item-count animate-number semi-bold"><script id="metamorph-3932-start" type="text/x-placeholder"></script>0.00<script id="metamorph-3932-end" type="text/x-placeholder"></script></span>
+                      <br>
+                      <span class="text-white mini-description " style="font-size: 9px">PREV DAY DIFF</span>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="description col-sm-4">
+                    <span class="text-white mini-description ">AVG: <span class="semi-bold"><script id="metamorph-3933-start" type="text/x-placeholder"></script>25.33<script id="metamorph-3933-end" type="text/x-placeholder"></script></span></span>
+                  </div>
+                  <div class="description col-sm-4">
+                    <span class="text-white mini-description ">MAX: <span class="semi-bold"><script id="metamorph-3934-start" type="text/x-placeholder"></script>564.24<script id="metamorph-3934-end" type="text/x-placeholder"></script></span></span>
+                  </div>
+                  <div class="description col-sm-4">
+                    <span class="text-white mini-description ">MIN: <span class="semi-bold"><script id="metamorph-3935-start" type="text/x-placeholder"></script>-241.76<script id="metamorph-3935-end" type="text/x-placeholder"></script></span></span>
+                  </div>
+                </div>
+              </div>
+            </div></div>
+                </div>
+            
+                <div class="col-md-3 col-vlg-3 col-sm-12">
+                  <div id="ember5481" class="ember-view tiles added-margin m-b-20 green"><div>
+              <div class="tiles-body">
+                <div class="tiles-title text-white"><script id="metamorph-3936-start" type="text/x-placeholder"></script>Oil Sales<script id="metamorph-3936-end" type="text/x-placeholder"></script> </div>
+                <div class="row">
+                  <div class="col-md-8 col-sm-12">
+                    <div class="widget-stats">
+                      <div class="wrapper transparent" style="border-right: 0">
+                        <span class="item-count animate-number semi-bold" style="display: inline; font-size: 37px"><script id="metamorph-3937-start" type="text/x-placeholder"></script>1,631.88<script id="metamorph-3937-end" type="text/x-placeholder"></script></span> <script id="metamorph-3938-start" type="text/x-placeholder"></script>BBL<script id="metamorph-3938-end" type="text/x-placeholder"></script>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-4 col-sm-12">
+                    <div class="wrapper transparent" style="border-right: 0">
+                      <script id="metamorph-3939-start" type="text/x-placeholder"></script><script id="metamorph-3939-end" type="text/x-placeholder"></script>
+                      <span class="item-count animate-number semi-bold"><script id="metamorph-3940-start" type="text/x-placeholder"></script>0.00<script id="metamorph-3940-end" type="text/x-placeholder"></script></span>
+                      <br>
+                      <span class="text-white mini-description " style="font-size: 9px">PREV DAY DIFF</span>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="description col-sm-4">
+                    <span class="text-white mini-description ">AVG: <span class="semi-bold"><script id="metamorph-3941-start" type="text/x-placeholder"></script>125.53<script id="metamorph-3941-end" type="text/x-placeholder"></script></span></span>
+                  </div>
+                  <div class="description col-sm-4">
+                    <span class="text-white mini-description ">MAX: <span class="semi-bold"><script id="metamorph-3942-start" type="text/x-placeholder"></script>282.05<script id="metamorph-3942-end" type="text/x-placeholder"></script></span></span>
+                  </div>
+                  <div class="description col-sm-4">
+                    <span class="text-white mini-description ">MIN: <span class="semi-bold"><script id="metamorph-3943-start" type="text/x-placeholder"></script>-80.59<script id="metamorph-3943-end" type="text/x-placeholder"></script></span></span>
+                  </div>
+                </div>
+              </div>
+            </div></div>
+                </div>
+                
+                <div class="col-md-3 col-vlg-3 col-sm-12">
+                  <div id="ember5482" class="ember-view tiles added-margin m-b-20 blue"><div>
+              <div class="tiles-body">
+                <div class="tiles-title text-white"><script id="metamorph-3944-start" type="text/x-placeholder"></script>Water Production<script id="metamorph-3944-end" type="text/x-placeholder"></script> </div>
+                <div class="row">
+                  <div class="col-md-8 col-sm-12">
+                    <div class="widget-stats">
+                      <div class="wrapper transparent" style="border-right: 0">
+                        <span class="item-count animate-number semi-bold" style="display: inline; font-size: 37px"><script id="metamorph-3945-start" type="text/x-placeholder"></script>81,642.69<script id="metamorph-3945-end" type="text/x-placeholder"></script></span> <script id="metamorph-3946-start" type="text/x-placeholder"></script>BBL<script id="metamorph-3946-end" type="text/x-placeholder"></script>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-4 col-sm-12">
+                    <div class="wrapper transparent" style="border-right: 0">
+                      <script id="metamorph-3947-start" type="text/x-placeholder"></script><script id="metamorph-3947-end" type="text/x-placeholder"></script>
+                      <span class="item-count animate-number semi-bold"><script id="metamorph-3948-start" type="text/x-placeholder"></script>0.00<script id="metamorph-3948-end" type="text/x-placeholder"></script></span>
+                      <br>
+                      <span class="text-white mini-description " style="font-size: 9px">PREV DAY DIFF</span>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="description col-sm-4">
+                    <span class="text-white mini-description ">AVG: <span class="semi-bold"><script id="metamorph-3949-start" type="text/x-placeholder"></script>1,484.41<script id="metamorph-3949-end" type="text/x-placeholder"></script></span></span>
+                  </div>
+                  <div class="description col-sm-4">
+                    <span class="text-white mini-description ">MAX: <span class="semi-bold"><script id="metamorph-3950-start" type="text/x-placeholder"></script>77,657.00<script id="metamorph-3950-end" type="text/x-placeholder"></script></span></span>
+                  </div>
+                  <div class="description col-sm-4">
+                    <span class="text-white mini-description ">MIN: <span class="semi-bold"><script id="metamorph-3951-start" type="text/x-placeholder"></script>0.00<script id="metamorph-3951-end" type="text/x-placeholder"></script></span></span>
+                  </div>
+                </div>
+              </div>
+            </div></div>
+                </div>
+            
+                <div class="col-md-3 col-vlg-3 col-sm-12">
+                  <div id="ember5483" class="ember-view tiles added-margin m-b-20 red"><div>
+              <div class="tiles-body">
+                <div class="tiles-title text-white"><script id="metamorph-3952-start" type="text/x-placeholder"></script>Gas Production<script id="metamorph-3952-end" type="text/x-placeholder"></script> </div>
+                <div class="row">
+                  <div class="col-md-8 col-sm-12">
+                    <div class="widget-stats">
+                      <div class="wrapper transparent" style="border-right: 0">
+                        <span class="item-count animate-number semi-bold" style="display: inline; font-size: 37px"><script id="metamorph-3953-start" type="text/x-placeholder"></script>1,626,068.00<script id="metamorph-3953-end" type="text/x-placeholder"></script></span> <script id="metamorph-3954-start" type="text/x-placeholder"></script>MCF<script id="metamorph-3954-end" type="text/x-placeholder"></script>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-4 col-sm-12">
+                    <div class="wrapper transparent" style="border-right: 0">
+                      <script id="metamorph-3955-start" type="text/x-placeholder"></script><script id="metamorph-3955-end" type="text/x-placeholder"></script>
+                      <span class="item-count animate-number semi-bold"><script id="metamorph-3956-start" type="text/x-placeholder"></script>0.00<script id="metamorph-3956-end" type="text/x-placeholder"></script></span>
+                      <br>
+                      <span class="text-white mini-description " style="font-size: 9px">PREV DAY DIFF</span>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="description col-sm-4">
+                    <span class="text-white mini-description ">AVG: <span class="semi-bold"><script id="metamorph-3957-start" type="text/x-placeholder"></script>29,564.87<script id="metamorph-3957-end" type="text/x-placeholder"></script></span></span>
+                  </div>
+                  <div class="description col-sm-4">
+                    <span class="text-white mini-description ">MAX: <span class="semi-bold"><script id="metamorph-3958-start" type="text/x-placeholder"></script>1,622,304.00<script id="metamorph-3958-end" type="text/x-placeholder"></script></span></span>
+                  </div>
+                  <div class="description col-sm-4">
+                    <span class="text-white mini-description ">MIN: <span class="semi-bold"><script id="metamorph-3959-start" type="text/x-placeholder"></script>0.00<script id="metamorph-3959-end" type="text/x-placeholder"></script></span></span>
+                  </div>
+                </div>
+              </div>
+            </div></div>
+                </div>
+            
+              </div>
+               <div class="row">
+            	<div class="col-md-12">
+                    <table class="table table-bordered" id="example2">
+                      <thead>
+                        <tr>
+                          <th>Well</th>
+                          <th>Route</th>
+                          <th>Status</th>
+                          <th>Gauge Time</th>
+                          <th>Oil Prod</th>
+                          <th>Oil Sales</th>
+                          <th>Gas Vol</th>
+                          <th>Water Vol</th>
+                          <th>TP</th>
+                          <th>CP</th>
+                          <th>LP</th>
+                          <th>SCP</th>
+                          <th>Choke</th>
+                          <th>Prod Time</th>
+                          <th>Operator</th>
+                          <th>Pipeline</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="odd gradeX">
+                          <td>Nic 1-4</td>
+                          <td>1</td>
+                          <td></td>
+                          <td class="center"> 4</td>
+                          <td class="center">224.00</td>
+                          <td class="center">17.00</td>
+                          <td class="center">46.00</td>
+                          <td class="center">22.00</td>
+                          <td class="center">221</td>
+                          <td class="center">105</td>
+                          <td class="center" style="color: red;font-weight: bold;">16</td>
+                          <td class="center">0</td>
+                          <td class="center">64</td>
+                          <td class="center">24</td>
+                          <td class="center">JP</td>
+                          <td class="center">ONEOK</td>
+                          <td class="center"><a href="#" ><i class="fa fa-edit"></i></a><button type="button" class="btn btn-success btn-xs btn-mini pull-right">Approve</button></td>
+                        </tr>
+                        <tr class="even gradeC">
+                          <td><a href="#">Amos Blades 1-4</a></td>
+                          <td>1</td>
+                          <td>SI</td>
+                          <td class="center">0</td>
+                          <td class="center">0</td>
+                          <td class="center"></td>
+                          <td class="center"></td>
+                          <td class="center">0</td>
+                          <td class="center">0</td>
+                          <td class="center"></td>
+                          <td class="center"></td>
+                          <td class="center"></td>
+                          <td class="center"></td>
+                          <td class="center"></td>
+                          <td class="center">CH</td>
+                          <td class="center"></td>
+                          <td class="center">NOTES</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                          <td>Abernathy A 1-35</td>
+                          <td>3</td>
+                          <td></td>
+                          <td class="center"> 4</td>
+                          <td class="center">224.00</td>
+                          <td class="center">17.00</td>
+                          <td class="center">46.00</td>
+                          <td class="center">22.00</td>
+                          <td class="center">221</td>
+                          <td class="center">105</td>
+                          <td class="center">16</td>
+                          <td class="center">0</td>
+                          <td class="center">64</td>
+                          <td class="center">24</td>
+                          <td class="center"></td>
+                          <td class="center">ONEOK</td>
+                          <td class="center">NOTES</td>
+                        </tr>
+                        <tr class="even gradeA">
+                          <td>Archie 1-13</td>
+                          <td>3</td>
+                          <td></td>
+                          <td class="center"> 4</td>
+                          <td class="center">224.00</td>
+                          <td class="center">17.00</td>
+                          <td class="center">46.00</td>
+                          <td class="center">22.00</td>
+                          <td class="center">221</td>
+                          <td class="center">105</td>
+                          <td class="center">16</td>
+                          <td class="center">0</td>
+                          <td class="center">64</td>
+                          <td class="center">24</td>
+                          <td class="center"></td>
+                          <td class="center">ONEOK</td>
+                          <td class="center">NOTES</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                          <td>Barrington 1</td>
+                          <td>2</td>
+                          <td>SI</td>
+                          <td class="center"> 4</td>
+                          <td class="center">224.00</td>
+                          <td class="center">17.00</td>
+                          <td class="center">46.00</td>
+                          <td class="center">22.00</td>
+                          <td class="center">221</td>
+                          <td class="center">105</td>
+                          <td class="center">16</td>
+                          <td class="center">0</td>
+                          <td class="center">64</td>
+                          <td class="center">24</td>
+                          <td class="center"></td>
+                          <td class="center">ONEOK</td>
+                          <td class="center">NOTES</td>
+                        </tr>
+                        <tr class="even gradeA">
+                          <td>Trident</td>
+                          <td>3</td>
+                          <td></td>
+                          <td class="center"> 4</td>
+                          <td class="center">224.00</td>
+                          <td class="center">17.00</td>
+                          <td class="center">46.00</td>
+                          <td class="center">22.00</td>
+                          <td class="center">221</td>
+                          <td class="center">105</td>
+                          <td class="center">16</td>
+                          <td class="center">0</td>
+                          <td class="center">64</td>
+                          <td class="center">24</td>
+                          <td class="center"></td>
+                          <td class="center">ONEOK</td>
+                          <td class="center">NOTES</td>
+                        </tr>
+                        <tr class="gradeA">
+                          <td>Gecko</td>
+                          <td>4</td>
+                          <td></td>
+                          <td class="center"> 4</td>
+                          <td class="center">224.00</td>
+                          <td class="center">17.00</td>
+                          <td class="center">46.00</td>
+                          <td class="center">22.00</td>
+                          <td class="center">221</td>
+                          <td class="center">105</td>
+                          <td class="center">16</td>
+                          <td class="center">0</td>
+                          <td class="center">64</td>
+                          <td class="center">24</td>
+                          <td class="center"></td>
+                          <td class="center">ONEOK</td>
+                          <td class="center">NOTES</td>
+                        </tr>
+                        <tr class="gradeA">
+                          <td>Gecko</td>
+                          <td>1</td>
+                          <td></td>
+                          <td class="center"> 4</td>
+                          <td class="center">224.00</td>
+                          <td class="center">17.00</td>
+                          <td class="center">46.00</td>
+                          <td class="center">22.00</td>
+                          <td class="center">221</td>
+                          <td class="center">105</td>
+                          <td class="center">16</td>
+                          <td class="center">0</td>
+                          <td class="center">64</td>
+                          <td class="center">24</td>
+                          <td class="center"></td>
+                          <td class="center">ONEOK</td>
+                          <td class="center">NOTES</td>
+                        </tr>
+                        <tr class="gradeA">
+                          <td>Gecko</td>
+                          <td>3</td>
+                          <td></td>
+                          <td class="center"> 4</td>
+                          <td class="center">224.00</td>
+                          <td class="center">17.00</td>
+                          <td class="center">46.00</td>
+                          <td class="center">22.00</td>
+                          <td class="center">221</td>
+                          <td class="center">105</td>
+                          <td class="center">16</td>
+                          <td class="center">0</td>
+                          <td class="center">64</td>
+                          <td class="center">24</td>
+                          <td class="center"></td>
+                          <td class="center">ONEOK</td>
+                          <td class="center">NOTES</td>
+                        </tr>
+                        <tr class="gradeA">
+                          <td>Gecko</td>
+                          <td>4</td>
+                          <td></td>
+                          <td class="center"> 4</td>
+                          <td class="center">224.00</td>
+                          <td class="center">17.00</td>
+                          <td class="center">46.00</td>
+                          <td class="center">22.00</td>
+                          <td class="center">221</td>
+                          <td class="center">105</td>
+                          <td class="center">16</td>
+                          <td class="center">0</td>
+                          <td class="center">64</td>
+                          <td class="center">24</td>
+                          <td class="center"></td>
+                          <td class="center">ONEOK</td>
+                          <td class="center">NOTES</td>
+                        </tr>
+                        <tr class="gradeA">
+                          <td>Gecko</td>
+                          <td>4</td>
+                          <td>SI</td>
+                          <td class="center"> 4</td>
+                          <td class="center">224.00</td>
+                          <td class="center">17.00</td>
+                          <td class="center">46.00</td>
+                          <td class="center">22.00</td>
+                          <td class="center">221</td>
+                          <td class="center">105</td>
+                          <td class="center">16</td>
+                          <td class="center">0</td>
+                          <td class="center">64</td>
+                          <td class="center">24</td>
+                          <td class="center"></td>
+                          <td class="center">ONEOK</td>
+                          <td class="center">NOTES</td>
+                        </tr>
+                      </tbody>
+                    </table>                    
+                 </div>
+            </div>
+            <!-- END PLACE PAGE CONTENT HERE -->
+	</div>
+</div>
+<!-- END PAGE CONTAINER -->
+		</div>
+	</div>
+	<!-- END PAGE CONTAINER -->
+</div>
+<!-- END CONTENT --> 
+
+<!-- BEGIN CHAT --> 
+<div id="sidr" class="chat-window-wrapper">
+	<div id="main-chat-wrapper">
+		<div class="chat-window-wrapper fadeIn" id="chat-users">
+			<!-- BEGIN CHAT HEADER -->
+			<div class="chat-header">	
+				<!-- BEGIN CHAT SEARCH BAR -->
+				<div class="pull-left">
+					<input type="text" placeholder="search">
+				</div>
+				<!-- END CHAT SEARCH BAR -->
+				<!-- BEGIN CHAT QUICKLINKS -->		
+				<div class="pull-right">
+					<a href="#" class=""><div class="iconset top-settings-dark"></div></a>
+				</div>
+				<!-- END CHAT QUICKLINKS -->			
+			</div>
+			<!-- END CHAT HEADER -->	
+			<!-- BEGIN GROUP WIDGET -->
+			<div class="side-widget">
+				<div class="side-widget-title">group chats</div>
+				<div class="side-widget-content">
+					<div id="groups-list">
+						<ul class="groups">
+							<li><a href="#"><div class="status-icon green"></div>Group Chat 1</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- END GROUP WIDGET -->
+			<!-- BEGIN FAVORITES WIDGET -->
+			<div class="side-widget fadeIn">
+				<div class="side-widget-title">favorites</div>
+				<div class="side-widget-content">
+					<!-- BEGIN SAMPLE CHAT -->
+					<div class="user-details-wrapper active" data-chat-status="online" data-chat-user-pic="assets/img/profiles/d.jpg" data-chat-user-pic-retina="assets/img/profiles/d2x.jpg" data-user-name="Jane Smith">
+						<!-- BEGIN PROFILE PIC -->
+						<div class="user-profile">
+								<img src="assets/img/profiles/d.jpg" alt="" data-src="assets/img/profiles/d.jpg" data-src-retina="assets/img/profiles/d2x.jpg" width="35" height="35">
+							</div>
+						<!-- END PROFILE PIC -->
+						<!-- BEGIN MESSAGE -->
+						<div class="user-details">
+								<div class="user-name">Jane Smith</div>
+								<div class="user-more">Message...</div>
+							</div>
+						<!-- END MESSAGE -->
+						<!-- BEGIN MESSAGES BADGE -->
+						<div class="user-details-status-wrapper">
+								<span class="badge badge-important">3</span>
+							</div>
+						<!-- END MESSAGES BADGE -->
+						<!-- BEGIN STATUS -->
+						<div class="user-details-count-wrapper">
+								<div class="status-icon green"></div>
+							</div>
+						<!-- END STATUS -->
+						<div class="clearfix"></div>
+					</div>
+					<!-- END SAMPLE CHAT -->	
+				</div>
+			</div>
+			<!-- END FAVORITES WIDGET -->
+			<!-- BEGIN MORE FRIENDS WIDGET -->
+			<div class="side-widget">
+				<div class="side-widget-title">more friends</div>
+				<div class="side-widget-content" id="friends-list">
+					<!-- BEGIN SAMPLE CHAT -->
+					<div class="user-details-wrapper" data-chat-status="online" data-chat-user-pic="assets/img/profiles/d.jpg" data-chat-user-pic-retina="assets/img/profiles/d2x.jpg" data-user-name="Jane Smith">
+						<!-- BEGIN PROFILE PIC -->
+						<div class="user-profile">
+							<img src="assets/img/profiles/d.jpg" alt="" data-src="assets/img/profiles/d.jpg" data-src-retina="assets/img/profiles/d2x.jpg" width="35" height="35">
+						</div>
+						<!-- END PROFILE PIC -->
+						<!-- BEGIN MESSAGE -->
+						<div class="user-details">
+							<div class="user-name">Jane Smith</div>
+							<div class="user-more">Message...</div>
+						</div>
+						<!-- END MESSAGE -->
+						<!-- BEGIN MESSAGES BADGE -->
+						<div class="user-details-status-wrapper">
+							<span class="badge badge-important">3</span>
+						</div>
+						<!-- END MESSAGES BADGE -->
+						<!-- BEGIN STATUS -->
+						<div class="user-details-count-wrapper">
+							<div class="status-icon green"></div>
+						</div>
+						<!-- END STATUS -->
+						<div class="clearfix"></div>
+					</div>
+					<!-- END SAMPLE CHAT -->
+				</div>		
+			</div>
+			<!-- END MORE FRIENDS WIDGET -->
+		</div>		
+		<!-- BEGIN DUMMY CHAT CONVERSATION -->
+		<div class="chat-window-wrapper fadeIn" id="messages-wrapper" style="display:none">
+			<!-- BEGIN CHAT HEADER BAR -->
+			<div class="chat-header">	
+				<!-- BEGIN SEARCH BAR -->
+				<div class="pull-left">
+					<input type="text" placeholder="search">
+				</div>		
+				<!-- END SEARCH BAR -->
+				<!-- BEGIN CLOSE TOGGLE -->
+				<div class="pull-right">
+					<a href="#" class=""><div class="iconset top-settings-dark"></div></a>
+				</div>	
+				<!-- END CLOSE TOGGLE -->				
+			</div>
+			<div class="clearfix"></div>
+			<!-- END CHAT HEADER BAR -->
+			<!-- BEGIN CHAT BODY -->
+			<div class="chat-messages-header">
+				<div class="status online"></div>
+				<span class="semi-bold">Jane Smith(Typing..)</span>
+				<a href="#" class="chat-back"><i class="icon-custom-cross"></i></a>
+			</div>
+			<!-- BEGIN CHAT MESSAGES CONTAINER -->
+			<div class="chat-messages">
+				<!-- BEGIN TIME STAMP EXAMPLE -->
+				<div class="sent_time">Yesterday 11:25pm</div>
+				<!-- END TIME STAMP EXAMPLE -->
+				<!-- BEGIN EXAMPLE CHAT MESSAGE -->
+				<div class="user-details-wrapper">
+					<!-- BEGIN MESSENGER PROFILE -->
+					<div class="user-profile">
+						<img src="assets/img/profiles/d.jpg" alt="" data-src="assets/img/profiles/d.jpg" data-src-retina="assets/img/profiles/d2x.jpg" width="35" height="35">
+					</div>
+					<!-- END MESSENGER PROFILE -->
+					<!-- BEGIN MESSENGER MESSAGE -->
+					<div class="user-details">
+						<div class="bubble">Hello, You there?</div>
+					</div>
+					<!-- END MESSENGER MESSAGE -->					
+					<div class="clearfix"></div>
+					<!-- BEGIN TIMESTAMP ON CLICK TOGGLE -->
+					<div class="sent_time off">Yesterday 11:25pm</div>
+					<!-- END TIMESTAMP ON CLICK TOGGLE -->
+				</div>
+				<!-- END EXAMPLE CHAT MESSAGE -->
+				<!-- BEGIN TIME STAMP EXAMPLE -->
+				<div class="sent_time">Today 11:25pm</div>
+				<!-- BEGIN TIME STAMP EXAMPLE -->				
+				<!-- BEGIN EXAMPLE CHAT MESSAGE (FROM SELF) -->
+				<div class="user-details-wrapper pull-right">
+					<!-- BEGIN MESSENGER MESSAGE -->
+					<div class="user-details">
+						<div class="bubble sender">Let me know when you free</div>
+					</div>					
+					<!-- END MESSENGER MESSAGE -->
+					<div class="clearfix"></div>
+					<!-- BEGIN TIMESTAMP ON CLICK TOGGLE -->
+					<div class="sent_time off">Sent On Tue, 2:45pm</div>
+					<!-- END TIMESTAMP ON CLICK TOGGLE -->
+				</div>	
+				<!-- END EXAMPLE CHAT MESSAGE (FROM SELF) -->	
+			</div>
+			<!-- END CHAT MESSAGES CONTAINER -->
+		</div>
+		<div class="chat-input-wrapper" style="display:none">
+			<textarea id="chat-message-input" rows="1" placeholder="Type your message"></textarea>
+		</div>
+		<div class="clearfix"></div>
+		<!-- END DUMMY CHAT CONVERSATION -->
+	</div>
+</div>
+<!-- END CHAT --> 
+</body>
+</html>
