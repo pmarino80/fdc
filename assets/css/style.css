@@ -6581,12 +6581,12 @@ code:hover {
   box-shadow: none;
 }
 .panel-default {
-  border: 0px;
+  border: 1px solid #ccc;
 }
 .panel-default > .panel-heading {
   background-image: none;
-  background-color: #D9E0E4;
-  border-radius: 2px;
+  background-color: #eeeeee;
+  border-radius: 1px;
   box-shadow: none;
 }
 .panel-group {
