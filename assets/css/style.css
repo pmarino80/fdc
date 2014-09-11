@@ -1502,7 +1502,7 @@ body.menu-non-fixed .page-sidebar {
 .page-content {
   margin-top: 0px;
   padding: 0px;
-  background-color: #f1f1f1;
+  background-color: #fff;
   overflow: auto;
   position: relative;
   min-height: 1400px !important;
@@ -3888,6 +3888,7 @@ form legend,
   z-index: 10;
   overflow: hidden;
   margin-bottom: 18px;
+  padding: 10px;
 }
 .tab-content.transparent {
   background-color: transparent;
@@ -6440,45 +6441,37 @@ code:hover {
 }
 .nav-tabs {
   margin-bottom: 0px;
-  background-color: #fefffe;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-}
-.nav-tabs ul {
+  background-color: #fff;
+  padding: 0;
 }
 .nav-tabs > li {
-  margin-bottom: 0px;
+  margin-bottom: -4px;
   padding-left: 0;
-  font-weight: bold;
+  border: 0px;
 }
 .nav-tabs > li > a {
   border-radius: 0;
   border: 0px;
-  padding: 15px 10px 10px 10px;
+  padding: 18px 40px;
   color: #8e9aa2;
   min-width: 70px;
-  margin: 0px 0px 0px 30px;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  border-width: 0px;
-  border-bottom:  4px solid #25A5F6;
-  font-weight: bold;
+  border-top: 3px solid #25A6F7;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 15px 40px;
 }
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
-  border: 0px;
   color: #505458;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-top-right-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-topright: 3px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  padding-right: -1px !important;
+  margin-right: -1px !important;
 }
+
 .nav > li > a:hover,
 .nav > li > a:focus {
   background-color: transparent;
@@ -6519,6 +6512,9 @@ code:hover {
 }
 .nav-pills > li > a {
   padding: 8px 12px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 18px;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
