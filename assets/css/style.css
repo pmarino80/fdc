@@ -3888,7 +3888,6 @@ form legend,
   z-index: 10;
   overflow: hidden;
   margin-bottom: 18px;
-  padding: 10px;
 }
 .tab-content.transparent {
   background-color: transparent;
@@ -6445,14 +6444,14 @@ code:hover {
   padding: 0;
 }
 .nav-tabs > li {
-  margin-bottom: -4px;
+  margin-bottom: -3px;
   padding-left: 0;
   border: 0px;
 }
 .nav-tabs > li > a {
   border-radius: 0;
   border: 0px;
-  padding: 18px 40px;
+  padding: 15px 40px;
   color: #8e9aa2;
   min-width: 70px;
 }
@@ -6462,13 +6461,12 @@ code:hover {
   border-top: 3px solid #25A6F7;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
-  padding: 15px 40px;
+  padding: 12px 40px 12px 39px;
 }
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
   color: #505458;
-  padding-right: -1px !important;
   margin-right: -1px !important;
 }
 
