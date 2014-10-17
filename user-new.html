@@ -48,6 +48,11 @@
 		margin-left: 250px !important; 
 		min-height: 1006px;
 	}
+	.table.access td {
+		vertical-align: middle !important;
+		font-weight: bold;
+		color: black;
+	}
 	</style>
 
 </head>
@@ -266,8 +271,7 @@
 		<div class="content">  
 			<!-- BEGIN PAGE TITLE -->
                 <div class="page-title">
-                    	<h4>Users - <span class="semi-bold">Create New</span></h4>
-                    	<p>Invited employees will not have access to your bank information, username/password, business settings or full sales history. Mobile staff name and ID will appear in relevant sales reports. Add or remove staff at any time.</p>	
+                    	<h4>Users - <span class="semi-bold">Create New</span></h4>	
                 </div>
                 <div class="row">
                 	<div class="col-md-12">
@@ -325,26 +329,7 @@
 	                  </div>
 	                </div>
 	              </div>
-	              
-	              <div class="row">
-	              	<table class="table">
-	              	<th></th>
-	              		<tr>
-	              			<td>Ability to configure routes</td>
-	              			<td><select id="source" class="form-control input-sm">
-	              			  <option value="">Select User Title</option>
-	              			  <option value="">Administrator</option>
-	              			  <option value="">Superintendent</option>
-	              			  <option value="">Supervisor</option>
-	              			  <option value="">Foreman</option>
-	              			  <option value="">Lead Pumper</option>
-	              			  <option value="">Pumper</option>
-	              			</select></td>
-	              		</tr>
-	              	</table>g
-	              
-	              
-	              </div>
+	             
 	              
 	              
                    <div class="grid-title no-border"><hr>
@@ -356,46 +341,170 @@
 	                    <div class="row">
 	                      <div class="col-sm-8">
 	                      
-	                        <form class="form" role="form">
-		                        <div class="form-group">
-		                        <label class="col-sm-7 control-label" for="titleSelect">Ability to configure routes</label>
-		                        	<div class="col-sm-5">
-			                            <select id="source" class="form-control input-sm">
-			                              <option value="">Select User Title</option>
-			                              <option value="">Administrator</option>
-			                              <option value="">Superintendent</option>
-			                              <option value="">Supervisor</option>
-			                              <option value="">Foreman</option>
-			                              <option value="">Lead Pumper</option>
-			                              <option value="">Pumper</option>
-			                            </select>
-			                         </div>
-		                        </div>
-		                        <div class="form-group">
-		                        	<label class="col-sm-7 control-label" for="titleSelect">Ability to configure routes</label>
-			                        <div class="col-sm-5">
-			                            <select id="source" class="form-control input-sm" id="titleSelect">
-			                              <option value="">Select User Title</option>
-			                              <option value="">Administrator</option>
-			                              <option value="">Superintendent</option>
-			                              <option value="">Supervisor</option>
-			                              <option value="">Foreman</option>
-			                              <option value="">Lead Pumper</option>
-			                              <option value="">Pumper</option>
-			                            </select>
-			                        </div>
-		                        </div>
+	                      	<table class="table table-condensed access">
+	                      		<tr>
+	                      			<th style="border-top:0px"></th><th style="border-top:0px"></th>
+	                      		</tr>
+	                      		<tr>
+	                      			<td>Select user role or title</td>
+	                      			<td><select id="source" class="form-control input-sm">
+	                      			  <option value="">Select User Title</option>
+	                      			  <option value="">Administrator</option>
+	                      			  <option value="">Superintendent</option>
+	                      			  <option value="">Supervisor</option>
+	                      			  <option value="">Foreman</option>
+	                      			  <option value="">Lead Pumper</option>
+	                      			  <option value="">Pumper</option>
+	                      			</select></td>
+	                      		</tr>
+	                      		<tr>
+	                      			<td>Select primary region of operation</td>
+	                      			<td>
+
+		                      				<select id="source" id="disabledSelect" class="form-control input-sm">
+		                      			  	<option value="">Select Region</option>
+		                      			  	<option value="">Midstates - Tulsa</option>
+		                      			  	<option value="">MidCon</option>
+		                      				</select>
+
+	                      			</td>
+	                      		</tr>
+	                      			<tr>
+	                      				<td>Select field office</td>
+	                      				<td><select id="source" class="form-control input-sm">
+	                      				  <option value="">Select Field Office</option>
+	                      				  <option value="">MidCon East</option>
+	                      				  <option value="">MidCon West</option>
+	                      				</select></td>
+	                      			</tr>
+                      				<tr>
+                      					<td>Select field sub-area</td>
+                      					<td><select id="source" class="form-control input-sm">
+                      					  <option value="">Select Sub-Area</option>
+                      					  <option value="">MidCon East - East</option>
+                      					  <option value="">MidCon East - West</option>
+                      					</select></td>
+                      				</tr>
+                  					<tr>
+                  						<td>Access to Scout iPad Application</td>
+                  						<td>
+<input type="radio" name="ipad" value="yes">  &nbsp;Yes &nbsp; &nbsp; &nbsp;
+<input type="radio" name="ipad" value="no">  &nbsp;No
+                  						</td>
+                  					</tr>
+                  					<tr>
+                  						<td>Enable Offline Mode for Scout iPad</td>
+                  						<td>
+<input type="radio" name="ipad" value="yes">  &nbsp;Yes &nbsp; &nbsp; &nbsp;
+<input type="radio" name="ipad" value="no">  &nbsp;No
+                  						</td>
+                  					</tr>
+	                      	</table>
+	                      
 		                        
 		                      </div>
 		                      <div class="col-sm-4">
-		                        <h4>User Instruction</h4>
+		                        <h5 class="semi-bold">User Instruction</h5>
 		                        <p>Now is the time for all good men to come to the aid of their country.</p>
+		                        <br>
+		                        <h5 class="semi-bold">What happens if I add someone to my team?</h5>
+		                        <p>Now is the time for all good men to come to the aid of their country.</p><br>
+		                        <h5 class="semi-bold">Scout Offline Mode</h5>
+		                        <p>Enable your operators to record and submit data when Internet service is unavailable.</p>
 		                      </div>
 		                    </form>
 		                    
 	                    </div>
 	                  </div>
 	                </div>
+	                
+	                <div class="grid-title no-border"><hr>
+					
+					<div class="row">
+		                  <div class="col-md-12">
+		                    <h4>Route <span class="semi-bold">Selection</span></h4>
+		                    <div class="row">
+		                      <div class="col-sm-8">
+		                      
+		                      	<table class="table table-condensed access">
+		                      		<tr>
+		                      			<th style="border-top:0px"></th><th style="border-top:0px"></th>
+		                      		</tr>
+		                      		<tr>
+		                      			<td>Mid-Con East: RT 1</td>
+		                      			<td>
+		                      				<label class="pull-right">
+												<input name="checkbox" type="checkbox">
+											</label>
+		                      			</td>
+		                      		</tr>
+	                      			<tr>
+	                      				<td>Mid-Con East: RT 2</td>
+	                      				<td>
+	                      					<label class="pull-right">
+	                      					<input name="checkbox" type="checkbox">
+	                      				</label>
+	                      				</td>
+	                      			</tr>
+                      				<tr>
+                      					<td>Mid-Con East: RT 5</td>
+                      					<td>
+                      						<label class="pull-right">
+                      						<input name="checkbox" type="checkbox">
+                      					</label>
+                      					</td>
+                      				</tr>
+                  					<tr>
+                  						<td>Mid-Con East: RT 7</td>
+                  						<td>
+                  							<label class="pull-right">
+                  							<input name="checkbox" type="checkbox">
+                  						</label>
+                  						</td>
+                  					</tr>
+              						<tr>
+              							<td>Mid-Con East: RT 9</td>
+              							<td>
+              								<label class="pull-right">
+              								<input name="checkbox" type="checkbox">
+              							</label>
+              							</td>
+              						</tr>
+          							<tr>
+          								<td>Choose a default or primary route</td>
+          								<td><select id="source" class="form-control input-sm">
+          								  <option value="">Select Default Route</option>
+											<option value="">Mid-Con East: RT 1</option>
+											<option value="">Mid-Con East: RT 2</option>
+											<option value="">Mid-Con East: RT 5</option>
+											<option value="">Mid-Con East: RT 7</option>
+											<option value="">Mid-Con East: RT 9</option>
+          								</select></td>
+          							</tr>
+		                      	</table>
+		                      
+			                        
+			                      </div>
+			                      <div class="col-sm-4">
+			                        <h5 class="semi-bold">Route Selection</h5>
+			                        <p>Select which routes are available to view from the Scout mobile application.</p>
+			                      </div>
+			                    </form>
+			                    
+		                    </div>
+		                  </div>
+		                </div>
+					
+					<div class="grid-title no-border"><hr>
+					
+					<div class="row">
+					      <div class="col-md-12">
+					        <h4>Deactivate <span class="semi-bold">User</span></h4>
+					        <p>Deactivating the Scout user account means the user will be unable to use either the Scout Web Portal or the Scout iPad Application.<p>
+					        <a href="#">DEACTIVATE ACCOUNT</a>
+					      </div>
+					    </div>
+						                
 	             </div>
 
 
