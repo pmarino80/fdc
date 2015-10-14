@@ -415,6 +415,7 @@
     <ul class="nav nav-tabs" id="tab-01">
       <li class="active"><a href="#tab1hellowWorld">TICKETS</a></li>
       <li><a href="#tab1FollowUs" data-toggle="tab">ACTIVITY</a></li>
+	  <li><a href="#tab1WellTests" data-toggle="tab">WELL TESTS</a></li>
       <li><a href="#tab1Inspire" data-toggle="tab">CONFIGURATION</a></li>
 	  <li><a href="#tab1Allocations" data-toggle="tab">ALLOCATIONS</a></li>
     </ul>
@@ -468,6 +469,21 @@
 
 
   </div>
+      <div class="tab-pane" id="tab1WellTests">
+
+
+                      <div class="row bs-wizard" style="border-bottom:0;">
+
+                          <div class="col-xs-5 bs-wizard-step active"><!-- active -->
+                            <div class="text-center bs-wizard-stepnum">Step 4</div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                            <a href="#" class="bs-wizard-dot"></a>
+                            <div class="bs-wizard-info text-center"> Robinson Battery</div>
+                          </div>
+                      </div>
+
+
+  </div>
       <div class="tab-pane" id="tab1Inspire">
 
 
@@ -484,31 +500,72 @@
 
   </div>
       <div class="tab-pane" id="tab1Allocations">
+		<h4>Network <span class="semi-bold">Details</span></h4>
 
 
-                      <div class="row bs-wizard" style="border-bottom:0;">
+                     <div class="panel panel-default">
+						  <div class="panel-heading">
+						  <button type="button" class="btn btn-link pull-left" style="padding:10px 5px 0px 0px">
+						    <i class="fa fa-code-fork fa-lg fa-rotate-180 fa-flip-vertical pull-left"></i>
+						  </button>
+						     <h3 class="panel-title">
+							      <select id="source" style="width:120px;border: 1px solid #ccc;">
+							        <option value="">10/01/15</option>
+							        <option value="">04/15/15</option>
+							        <option value="">02/01/15</option>
+							        <option value="">06/01/14</option>
+							      </select>
+							      <span class="semi-bold pull-right" style="font-size:13px;padding-right: 10px;"> Wells</span>
+							    </h3>
+						  </div>
+						  <div class="panel-body" style="padding: 0">
+							  <table class="table table-condensed">
+							
+								                  <tr>
+								                      <td>Name</td>
+								                      <td>Oil %</td>
+								                      <td>Gas %</td>
+													  <td>Water %</td>
+													  <td></td>                                           
+								                  </tr>
+								             
 
-                       <div class="col-xs-3 bs-wizard-step complete">
-                            <div class="text-center bs-wizard-stepnum">Step 2</div>
-                            <div class="progress"><div class="progress-bar"></div></div>
-                            <a href="#" class="bs-wizard-dot"></a>
-                            <div class="bs-wizard-info text-center">Nam mollis tristique erat vel tristique. Aliquam erat volutpat. Mauris et vestibulum nisi. Duis molestie nisl sed scelerisque vestibulum. Nam placerat tristique placerat</div>
-                          </div>
-
-                         <div class="col-xs-3 bs-wizard-step active">
-                            <div class="text-center bs-wizard-stepnum">Step 3</div>
-                            <div class="progress"><div class="progress-bar"></div></div>
-                            <a href="#" class="bs-wizard-dot"></a>
-                            <div class="bs-wizard-info text-center">Integer semper dolor ac auctor rutrum. Duis porta ipsum vitae mi bibendum bibendum</div>
-                          </div>
-
-                          <div class="col-xs-5 bs-wizard-step active">
-                            <div class="text-center bs-wizard-stepnum">Step 4</div>
-                            <div class="progress"><div class="progress-bar"></div></div>
-                            <a href="#" class="bs-wizard-dot"></a>
-                            <div class="bs-wizard-info text-center"> Robinson Battery</div>
-                          </div>
-                      </div>
+								<tr>
+									<td><select id="source" style="width:180px;border: 1px solid #ccc;">
+								        <option value="">Berryman 1-23</option>
+								        <option value="">Berryman 2-26</option>
+								        <option value="">Miller 1-23</option>
+								        <option value="">Berryman 3-23</option>
+								      </select></td>
+									<td><input type="text" value="33%" class="form-control"></td>
+									<td><input type="text" value="24%" class="form-control"></td>
+									<td><input type="text" value="43%" class="form-control"></td>
+									<td><button type="button" class="btn btn-danger btn-xs btn-mini pull-right" style="margin:5px 20px 0px 0px">x</button></td>
+								</tr>
+								<tr>
+									<td><select id="source" style="width:180px;border: 1px solid #ccc;">
+								        <option value="">Berryman 2-26</option>
+								        <option value="">Miller 1-23</option>
+								        <option value="">Berryman 3-23</option>
+								      </select></td>
+									<td><input type="text" value="43%" class="form-control"></td>
+									<td><input type="text" value="33%" class="form-control"></td>
+									<td><input type="text" value="24%" class="form-control"></td>
+									<td><button type="button" class="btn btn-danger btn-xs btn-mini pull-right" style="margin:5px 20px 0px 0px">x</button></td>
+								</tr>
+								<tr>
+									<td><select id="source" style="width:180px;border: 1px solid #ccc;">
+								        <option value="">Miller 1-23</option>
+								        <option value="">Berryman 3-23</option>
+								      </select></td>
+									<td><input type="text" value="24%" class="form-control"></td>
+									<td><input type="text" value="43%" class="form-control"></td>
+									<td><input type="text" value="33%" class="form-control"></td>
+									<td><button type="button" class="btn btn-danger btn-xs btn-mini pull-right" style="margin:5px 20px 0px 0px">x</button></td>
+								</tr>
+							  </table>
+						  </div>
+					</div>
 
 
   </div>
